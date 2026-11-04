@@ -27,7 +27,7 @@ assert not any(k in settings['wallpaper'] for k in ('default', 'last', 'monitors
 assert settings['shell']['panel']['transparency_mode'] == 'glass'
 lua = (profile / '.config/hypr/hyprland.lua').read_text()
 assert 'name = "default-floating"' in lua
-assert 'blur_strength = 0.45' in lua and 'blur_strength = 0.70' in lua
+assert 'blur_strength = 0.60' in lua and 'blur_strength = 0.85' in lua
 for module in re.findall(r'require\("([^\"]+)"\)', lua):
     assert (profile / '.config/hypr' / (module + '.lua')).is_file()
 print('Profile checks passed: TOML, GTK preferences/imports, Lua modules, privacy constraints.')

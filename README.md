@@ -5,7 +5,7 @@
 **A personal Manjaro desktop built around Hyprland, Noctalia, and optical glass.**
 
 [![Platform](https://img.shields.io/badge/platform-Manjaro-35bf5c?style=flat-square)](https://manjaro.org/)
-[![Compositor](https://img.shields.io/badge/Hyprland-0.56.2-58c4dc?style=flat-square)](https://hyprland.org/)
+[![Compositor](https://img.shields.io/badge/Hyprland-0.57.0-58c4dc?style=flat-square)](https://hyprland.org/)
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-blue?style=flat-square)](LICENSE)
 
 Glass contours · Attached panels · Floating windows · Theme-aware GTK
@@ -42,9 +42,9 @@ Installing these dotfiles does not compile the plugin or patch ChatGPT. Opaque a
 | Component | Profile baseline |
 | --- | --- |
 | OS | Manjaro Linux |
-| Compositor | Hyprland **0.56.2**, native Lua configuration |
+| Compositor | Hyprland **0.57.0**, native Lua configuration |
 | Shell | Noctalia **5.2.1**, settings schema **14** |
-| Optical plugin | Custom **0.11.0-optical-rim** build from `hyprglass-liquid` |
+| Optical plugin | Custom **1.1.1-optical-rim** build from `hyprglass-liquid` |
 | GTK theme | `adw-gtk3` / `adw-gtk3-dark` |
 | Default palette | Noctalia community palette **ADW**, dark mode |
 | Displays | `HDMI-A-1`: 1920×1080 above `eDP-1`: 1920×1200, scale 1 |
@@ -174,7 +174,7 @@ The original width bindings include both symbolic minus/equal keys (50 px) and p
 
 ## Customization
 
-- **Glass strength:** change `tahoe-window`, `liquid-shell`, `liquid-attached`, and `liquid-dock` in the main Lua config. Window blur is `0.45`; shell blur is `0.70`. Native Hyprland blur stays disabled to avoid combining two blur treatments.
+- **Glass strength:** change `tahoe-window`, `liquid-shell`, `liquid-attached`, and `liquid-dock` in the main Lua config. Window blur is `0.60`; shell blur is `0.85`. Native Hyprland blur stays disabled to avoid combining two blur treatments.
 - **Application backgrounds:** GTK overrides use a 50% base paint and a separate 20% sidebar overlay. Composited results depend on underlying layers; these values are not whole-window opacity. Text and controls retain their opacity.
 - **Shell material:** adjust Noctalia's bar/dock opacity, panel transparency mode, and radius together with the shader presets. Re-enabling native shell borders can create doubled outlines.
 - **Machine overrides:** `hyprland-gui.lua` is an initially empty override module loaded last. Keep it present even if you do not use HyprMod.

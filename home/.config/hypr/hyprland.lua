@@ -528,7 +528,7 @@ require("noctalia").apply_theme()
 -- Use the outside glass rim only while this local build is loaded.
 local optical_windows = false
 for _, plugin in ipairs(hl.get_loaded_plugins()) do
-    if plugin.name == "hyprglass" and plugin.version == "0.11.0-optical-rim" then
+    if plugin.name == "hyprglass" and plugin.version == "1.1.1-optical-rim" then
         optical_windows = true
     end
 end
@@ -652,7 +652,7 @@ if hl.plugin.hyprglass then
     -- Separate window bevels from Noctalia's layer presets.
     hg.preset("tahoe-window", {
         inherits = "liquid-shell",
-        blur_strength = 0.45,
+        blur_strength = 0.60,
         edge_thickness = 0.028,
         refraction_strength = 1.25,
         refraction_flow = 1.0,
@@ -669,7 +669,7 @@ if hl.plugin.hyprglass then
     -- Shell glass is independent of application-window glass.
     hg.preset("liquid-shell", {
         glass_opacity = 1.0,
-        blur_strength = 0.70,
+        blur_strength = 0.85,
         blur_iterations = 1,
         tint_color = 0xffffff00,
         brightness = 1.0,
