@@ -656,7 +656,7 @@ if hl.plugin.hyprglass then
     -- Separate window bevels from Noctalia's layer presets.
     hg.preset("tahoe-window", {
         inherits = "liquid-shell",
-        blur_strength = 0.60,
+        blur_strength = 1.00,
         edge_thickness = 0.028,
         refraction_strength = 1.25,
         refraction_flow = 1.0,
@@ -673,8 +673,8 @@ if hl.plugin.hyprglass then
     -- Shell glass is independent of application-window glass.
     hg.preset("liquid-shell", {
         glass_opacity = 1.0,
-        blur_strength = 0.85,
-        blur_iterations = 1,
+        blur_strength = 1.20,
+        blur_iterations = 2,
         tint_color = 0xffffff00,
         brightness = 1.0,
         contrast = 1.0,

@@ -174,7 +174,7 @@ The original width bindings include both symbolic minus/equal keys (50 px) and p
 
 ## Customization
 
-- **Glass strength:** change `tahoe-window`, `liquid-shell`, `liquid-attached`, and `liquid-dock` in the main Lua config. Window blur is `0.60`; shell blur is `0.85`. Native Hyprland blur stays disabled to avoid combining two blur treatments.
+- **Glass strength:** change `tahoe-window`, `liquid-shell`, `liquid-attached`, and `liquid-dock` in the main Lua config. Window blur is `1.00`; shell blur is `1.20` with two iterations. Native Hyprland blur stays disabled to avoid combining two blur treatments.
 - **Application backgrounds:** GTK overrides use a 50% base paint and a separate 20% sidebar overlay. Composited results depend on underlying layers; these values are not whole-window opacity. Text and controls retain their opacity.
 - **Shell material:** adjust Noctalia's bar/dock opacity, panel transparency mode, and radius together with the shader presets. Re-enabling native shell borders can create doubled outlines.
 - **Machine overrides:** `hyprland-gui.lua` is an initially empty override module loaded last. Keep it present even if you do not use HyprMod.
