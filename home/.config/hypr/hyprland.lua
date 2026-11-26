@@ -57,6 +57,10 @@ hl.gesture({
 })
 
 hl.config({
+    render = {
+        -- Keep fullscreen video in SDR so panel brightness remains controllable.
+        cm_auto_hdr = 0,
+    },
     general = {
         gaps_in = 5,
         gaps_out = 10,
